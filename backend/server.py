@@ -95,7 +95,7 @@ async def get_project(project_id: str):
 @api_router.post("/projects", response_model=Project)
 async def create_project(project: ProjectCreate):
     """Create a new project (admin only in future)"""
-    project_dict = project.dict()
+    project_dict = project.model_dump()
     result = await db.projects.insert_one(project_dict)
     project_dict['_id'] = str(result.inserted_id)
     return Project(**project_dict)

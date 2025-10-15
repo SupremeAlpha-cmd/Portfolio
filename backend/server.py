@@ -105,7 +105,7 @@ async def create_project(project: ProjectCreate):
 @api_router.post("/contact", response_model=ContactMessageResponse)
 async def submit_contact_message(message: ContactMessageCreate):
     """Submit a contact form message"""
-    message_dict = message.dict()
+    message_dict = message.model_dump()
     message_dict['read'] = False
     
     result = await db.contact_messages.insert_one(message_dict)

@@ -55,7 +55,7 @@ async def get_skills():
 @api_router.post("/skills", response_model=Skill)
 async def create_skill(skill: SkillCreate):
     """Create a new skill (admin only in future)"""
-    skill_dict = skill.dict()
+    skill_dict = skill.model_dump()
     result = await db.skills.insert_one(skill_dict)
     skill_dict['_id'] = str(result.inserted_id)
     return Skill(**skill_dict)

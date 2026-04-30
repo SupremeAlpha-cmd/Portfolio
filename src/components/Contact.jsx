@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { useForm, ValidationError } from '@formspree/react';
 import { FiSend, FiMail, FiPhone, FiMapPin } from 'react-icons/fi';
@@ -20,7 +20,7 @@ const Contact = () => {
               transition={{ duration: 0.8 }}
             >
               <h2 className="editorial-title mb-8">
-                Let's <span className="gradient-text italic">Connect.</span>
+                Start a <span className="gradient-text italic">Dialogue.</span>
               </h2>
               <p className="text-2xl md:text-3xl text-slate-500 dark:text-slate-400 font-medium leading-tight tracking-tight max-w-xl">
                 Ready to turn your vision into a high-performance digital product? I'm currently accepting new collaborations and strategy sessions.

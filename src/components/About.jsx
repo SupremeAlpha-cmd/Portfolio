@@ -24,8 +24,8 @@ const About = () => {
               </h2>
               <div className="space-y-8 text-2xl md:text-3xl text-slate-500 dark:text-slate-400 font-medium leading-tight tracking-tight">
                 <p>
-                  I partner with visionary founders and established businesses to build digital products that matter. 
-                  To me, code is simply the medium—the true goal is creating solutions that resonate with real people.
+                  I partner with visionary founders and established businesses to build digital products that matter.
+                  To me, code is simply the medium, the true goal is creating solutions that resonate with real people.
                 </p>
                 <p className="text-slate-900 dark:text-white font-black text-4xl md:text-5xl">
                   "I believe that great software isn't just about the technology—it's about the people who use it every day."
@@ -74,7 +74,7 @@ const About = () => {
                   </div>
                 ))}
               </div>
-              
+
               <div className="mt-12 pt-12 border-t border-slate-200 dark:border-slate-800">
                 <p className="text-sm font-bold text-slate-500 mb-6 uppercase tracking-widest">Currently Building</p>
                 <div className="flex flex-wrap gap-3">

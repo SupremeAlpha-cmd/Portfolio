@@ -13,6 +13,7 @@ import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Resume from './components/Resume';
+import WhatsAppButton from './components/WhatsAppButton';
 
 // Main Portfolio Page
 const PortfolioHome = () => {
@@ -29,6 +30,7 @@ const PortfolioHome = () => {
         <Contact />
       </main>
       <Footer />
+      <WhatsAppButton />
     </>
   );
 };

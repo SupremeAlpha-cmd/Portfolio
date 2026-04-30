@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiArrowDownRight, FiArrowRight } from 'react-icons/fi';
+import { FiArrowDownRight } from 'react-icons/fi';
+import { FaWhatsapp } from 'react-icons/fa';
 import meImg from '../assets/ME.jpg';
 
 const Hero = () => {
@@ -35,7 +36,7 @@ const Hero = () => {
             >
               <span className="w-12 h-[2px] bg-slate-900 dark:bg-white"></span>
               <span className="text-xs md:text-sm font-black uppercase tracking-[0.4em] text-slate-500 dark:text-slate-400">
-                Digital Product Architect
+                Mobile & Web Developer
               </span>
             </motion.div>
 
@@ -56,7 +57,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-xl md:text-3xl text-slate-600 dark:text-slate-400 max-w-3xl leading-tight font-medium mb-12"
             >
-              Through <span className="text-slate-900 dark:text-white font-black">Javin-Ozel</span>, I architect high-performance digital solutions that bridge the gap between complex engineering and human-centric design.
+              Building human-centric digital products through <span className="text-slate-900 dark:text-white font-black">Javin-Ozel</span>. I craft bespoke mobile and web solutions that turn complex ideas into seamless user experiences.
             </motion.p>
 
             <motion.div
@@ -66,18 +67,21 @@ const Hero = () => {
               className="flex flex-wrap gap-6"
             >
               <button
-                onClick={() => scrollToSection('#projects')}
+                onClick={() => scrollToSection('#contact')}
                 className="btn-primary group"
               >
-                View Case Studies
+                Let's Start a Project
                 <FiArrowDownRight className="w-6 h-6 transition-transform group-hover:rotate-45" />
               </button>
-              <button
-                onClick={() => scrollToSection('#process')}
-                className="btn-secondary"
+              <a
+                href="https://wa.me/2348022586582"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary flex items-center gap-3 group"
               >
-                The Process
-              </button>
+                <FaWhatsapp className="text-[#25D366] w-6 h-6 group-hover:scale-110 transition-transform" />
+                Chat on WhatsApp
+              </a>
             </motion.div>
           </div>
 
@@ -99,8 +103,8 @@ const Hero = () => {
               {/* Badge Overlay */}
               <div className="absolute bottom-8 left-8 right-8 z-20">
                 <div className="glass-card rounded-[2rem] p-6 backdrop-blur-3xl">
-                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">Based in Nigeria</p>
-                  <p className="text-sm font-bold leading-tight">Available for global collaborations & product strategy.</p>
+                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">Philosophy</p>
+                  <p className="text-sm font-bold leading-tight italic">"I can do all things through Christ who strengthens me."</p>
                 </div>
               </div>
             </motion.div>

@@ -56,7 +56,7 @@ const Resume = () => {
                 <FiMail className="text-slate-400" /> robosapienc@gmail.com
               </a>
               <div className="flex items-center gap-3">
-                <FiPhone className="text-slate-400" /> +234 802 258 6582 / +234 913 777 4930
+                <FiPhone className="text-slate-400" /> +234 811 442 6150 / +234 913 777 4930
               </div>
               <div className="flex items-center gap-3">
                 <FiMapPin className="text-slate-400" /> Benin City, Edo State, Nigeria
@@ -93,7 +93,7 @@ const Resume = () => {
             <div>
               <div className="flex justify-between items-start mb-4">
                 <div>
-                  <h3 className="text-2xl font-black text-slate-900 dark:text-white">Lead Developer & Co-founder</h3>
+                  <h3 className="text-2xl font-black text-slate-900 dark:text-white">Infrastructure & Mobile Lead</h3>
                   <p className="text-lg font-bold text-slate-400 italic">Skholar</p>
                 </div>
                 <span className="text-sm font-black uppercase tracking-widest text-slate-500">2024 – Present</span>
@@ -143,7 +143,7 @@ const Resume = () => {
             <div>
               <h3 className="text-xl font-black text-slate-900 dark:text-white mb-1">B.Sc. (Ed) in Computer Science</h3>
               <p className="text-sm font-bold text-slate-400 mb-2 italic">University of Benin (UNIBEN)</p>
-              <p className="text-xs font-black uppercase tracking-widest text-slate-500">200 Level | Education Education</p>
+              <p className="text-xs font-black uppercase tracking-widest text-slate-500">200 Level | Computer Science</p>
             </div>
           </section>
 

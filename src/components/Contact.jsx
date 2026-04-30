@@ -1,19 +1,12 @@
 import React, { useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { FiSend, FiArrowUpRight, FiMail, FiPhone, FiMapPin } from 'react-icons/fi';
+import { useForm, ValidationError } from '@formspree/react';
+import { FiSend, FiMail, FiPhone, FiMapPin } from 'react-icons/fi';
 
 const Contact = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [status, setStatus] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setStatus('Message sent successfully!');
-    setFormData({ name: '', email: '', message: '' });
-    setTimeout(() => setStatus(''), 5000);
-  };
+  const [state, handleSubmit] = useForm("xzdopkrw");
 
   return (
     <section id="contact" className="section-padding relative overflow-hidden" ref={ref}>
@@ -37,7 +30,7 @@ const Contact = () => {
             <div className="space-y-8 pt-12 border-t border-slate-200 dark:border-slate-800">
               {[
                 { icon: <FiMail />, label: "Email", val: "robosapienc@gmail.com", href: "mailto:robosapienc@gmail.com" },
-                { icon: <FiPhone />, label: "WhatsApp", val: "+234 802 258 6582", href: "https://wa.me/2348022586582" },
+                { icon: <FiPhone />, label: "WhatsApp", val: "+234 811 442 6150", href: "https://wa.me/2348114426150" },
                 { icon: <FiMapPin />, label: "Location", val: "Edo State, Nigeria", href: "#" },
               ].map((item, i) => (
                 <a 
@@ -65,58 +58,75 @@ const Contact = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="glass-card rounded-[3.5rem] p-10 md:p-16"
             >
-              <form onSubmit={handleSubmit} className="space-y-10">
-                <div className="space-y-2">
-                  <label className="text-xs font-black uppercase tracking-[0.2em] text-slate-400">Your Name</label>
-                  <input
-                    type="text"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    required
-                    className="w-full bg-transparent border-b-2 border-slate-200 dark:border-slate-800 py-4 focus:border-slate-900 dark:focus:border-white outline-none transition-all text-xl font-bold"
-                    placeholder="Enter your name"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-xs font-black uppercase tracking-[0.2em] text-slate-400">Email Address</label>
-                  <input
-                    type="email"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    required
-                    className="w-full bg-transparent border-b-2 border-slate-200 dark:border-slate-800 py-4 focus:border-slate-900 dark:focus:border-white outline-none transition-all text-xl font-bold"
-                    placeholder="name@company.com"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-xs font-black uppercase tracking-[0.2em] text-slate-400">Project Details</label>
-                  <textarea
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    required
-                    rows="4"
-                    className="w-full bg-transparent border-b-2 border-slate-200 dark:border-slate-800 py-4 focus:border-slate-900 dark:focus:border-white outline-none transition-all text-xl font-bold resize-none"
-                    placeholder="Tell me about your vision..."
-                  />
-                </div>
-
-                <button type="submit" className="btn-primary w-full justify-center group py-6">
-                  Send Message
-                  <FiSend className="w-6 h-6 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                </button>
-
-                {status && (
-                  <motion.p 
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    className="text-center text-sm font-black uppercase tracking-widest text-slate-500"
+              {state.succeeded ? (
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  className="text-center space-y-6"
+                >
+                  <div className="w-20 h-20 bg-green-500/10 text-green-500 rounded-full flex items-center justify-center mx-auto text-4xl">
+                    ✓
+                  </div>
+                  <h3 className="text-3xl font-black tracking-tighter">Thank you!</h3>
+                  <p className="text-slate-500 font-medium">Your message has been received. I'll get back to you shortly.</p>
+                  <button 
+                    onClick={() => window.location.reload()}
+                    className="text-xs font-black uppercase tracking-widest text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors"
                   >
-                    {status}
-                  </motion.p>
-                )}
-              </form>
+                    Send another message
+                  </button>
+                </motion.div>
+              ) : (
+                <form onSubmit={handleSubmit} className="space-y-10">
+                  <div className="space-y-2">
+                    <label htmlFor="name" className="text-xs font-black uppercase tracking-[0.2em] text-slate-400">Your Name</label>
+                    <input
+                      id="name"
+                      type="text"
+                      name="name"
+                      required
+                      className="w-full bg-transparent border-b-2 border-slate-200 dark:border-slate-800 py-4 focus:border-slate-900 dark:focus:border-white outline-none transition-all text-xl font-bold"
+                      placeholder="Enter your name"
+                    />
+                    <ValidationError prefix="Name" field="name" errors={state.errors} className="text-red-500 text-xs mt-1" />
+                  </div>
+
+                  <div className="space-y-2">
+                    <label htmlFor="email" className="text-xs font-black uppercase tracking-[0.2em] text-slate-400">Email Address</label>
+                    <input
+                      id="email"
+                      type="email"
+                      name="email"
+                      required
+                      className="w-full bg-transparent border-b-2 border-slate-200 dark:border-slate-800 py-4 focus:border-slate-900 dark:focus:border-white outline-none transition-all text-xl font-bold"
+                      placeholder="name@company.com"
+                    />
+                    <ValidationError prefix="Email" field="email" errors={state.errors} className="text-red-500 text-xs mt-1" />
+                  </div>
+
+                  <div className="space-y-2">
+                    <label htmlFor="message" className="text-xs font-black uppercase tracking-[0.2em] text-slate-400">Project Details</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      required
+                      rows="4"
+                      className="w-full bg-transparent border-b-2 border-slate-200 dark:border-slate-800 py-4 focus:border-slate-900 dark:focus:border-white outline-none transition-all text-xl font-bold resize-none"
+                      placeholder="Tell me about your vision..."
+                    />
+                    <ValidationError prefix="Message" field="message" errors={state.errors} className="text-red-500 text-xs mt-1" />
+                  </div>
+
+                  <button 
+                    type="submit" 
+                    disabled={state.submitting}
+                    className="btn-primary w-full justify-center group py-6 disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    {state.submitting ? 'Sending...' : 'Send Message'}
+                    {!state.submitting && <FiSend className="w-6 h-6 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />}
+                  </button>
+                </form>
+              )}
             </motion.div>
           </div>
         </div>

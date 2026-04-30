@@ -74,7 +74,7 @@ const Hero = () => {
                 <FiArrowDownRight className="w-6 h-6 transition-transform group-hover:rotate-45" />
               </button>
               <a
-                href="https://wa.me/2348022586582"
+                href="https://wa.me/2348114426150"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary flex items-center gap-3 group"

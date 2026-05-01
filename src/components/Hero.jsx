@@ -25,7 +25,7 @@ const Hero = () => {
       </div>
 
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Main Headline Section */}
           <div className="lg:col-span-8">
             <motion.div
@@ -36,7 +36,7 @@ const Hero = () => {
             >
               <span className="w-12 h-[2px] bg-slate-900 dark:bg-white"></span>
               <span className="text-xs md:text-sm font-black uppercase tracking-[0.4em] text-slate-500 dark:text-slate-400">
-                Mobile & Web Developer
+                Mobile & Web Developer · Javin-Ozel
               </span>
             </motion.div>
 
@@ -44,20 +44,20 @@ const Hero = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="editorial-title"
+              className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-none mb-8"
             >
-              <span className="block">Oreoluwa</span>
-              <span className="block text-slate-400 dark:text-slate-600">Ifedinma</span>
-              <span className="block gradient-text italic">Chiazor.</span>
+              I turn your ideas into{' '}
+              <span className="gradient-text italic">real, scalable</span>{' '}
+              web and mobile products.
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-xl md:text-3xl text-slate-600 dark:text-slate-400 max-w-3xl leading-tight font-medium mb-12"
+              className="text-xl md:text-2xl text-slate-500 dark:text-slate-400 max-w-2xl leading-relaxed font-medium mb-12"
             >
-              Building human-centric digital products through <span className="text-slate-900 dark:text-white font-black">Javin-Ozel</span>. I craft bespoke mobile and web solutions that turn complex ideas into seamless user experiences.
+              From confusion to clarity — I help you plan, design, and build digital products that actually work.
             </motion.p>
 
             <motion.div
@@ -70,7 +70,7 @@ const Hero = () => {
                 onClick={() => scrollToSection('#contact')}
                 className="btn-primary group"
               >
-                Let's Start a Project
+                Start a Project
                 <FiArrowDownRight className="w-6 h-6 transition-transform group-hover:rotate-45" />
               </button>
               <a
@@ -96,19 +96,19 @@ const Hero = () => {
               <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors duration-700 z-10" />
               <img
                 src={meImg}
-                alt="Oreoluwa Ifedinma Chiazor"
+                alt="Oreoluwa Ifedinma Chiazor — Javin-Ozel"
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-110 group-hover:scale-100"
               />
-              
+
               {/* Badge Overlay */}
               <div className="absolute bottom-8 left-8 right-8 z-20">
                 <div className="glass-card rounded-[2rem] p-6 backdrop-blur-3xl">
-                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">Philosophy</p>
-                  <p className="text-sm font-bold leading-tight italic">"I can do all things through Christ who strengthens me."</p>
+                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">Foundation</p>
+                  <p className="text-sm font-bold leading-tight italic">"I can do all things through Christ who strengthens me." — Phil. 4:13</p>
                 </div>
               </div>
             </motion.div>
-            
+
             {/* Decorative Element */}
             <div className="absolute -bottom-6 -right-6 w-32 h-32 border-r-4 border-b-4 border-slate-900 dark:border-white rounded-br-[3rem] -z-10" />
           </div>

@@ -7,7 +7,6 @@ const About = () => {
 
   return (
     <section id="about" className="section-padding relative overflow-hidden" ref={ref}>
-      {/* Background Decorative Element */}
       <div className="absolute top-1/2 right-0 -translate-y-1/2 w-96 h-96 bg-slate-200/20 dark:bg-slate-800/10 rounded-full blur-[120px] -z-10" />
 
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
@@ -20,15 +19,18 @@ const About = () => {
               transition={{ duration: 0.8 }}
             >
               <h2 className="editorial-title mb-12">
-                The <span className="gradient-text italic">Partnership.</span>
+                Where Your Idea Meets <span className="gradient-text italic">Execution.</span>
               </h2>
-              <div className="space-y-8 text-2xl md:text-3xl text-slate-500 dark:text-slate-400 font-medium leading-tight tracking-tight">
+              <div className="space-y-8 text-xl md:text-2xl text-slate-500 dark:text-slate-400 font-medium leading-relaxed">
                 <p>
-                  I partner with visionary founders and established businesses to build digital products that matter.
-                  To me, code is simply the medium, the true goal is creating solutions that resonate with real people.
+                  Most people have ideas but don't know how to bring them to life.
+                  <span className="text-slate-900 dark:text-white font-black"> That's where I come in.</span>
                 </p>
-                <p className="text-slate-900 dark:text-white font-black text-4xl md:text-5xl">
-                  "I believe that great software isn't just about the technology—it's about the people who use it every day."
+                <p>
+                  I don't just build apps or websites — I help you figure out what actually needs to be built, how it should work, and how to do it right the first time.
+                </p>
+                <p>
+                  Whether you're starting from scratch or trying to improve what you already have, I bring <span className="text-slate-900 dark:text-white font-black">clarity, structure, and execution.</span>
                 </p>
               </div>
             </motion.div>
@@ -40,9 +42,9 @@ const About = () => {
               className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-12 border-t border-slate-200 dark:border-slate-800"
             >
               <div>
-                <h4 className="text-sm font-black uppercase tracking-widest text-slate-400 mb-4">The Mission</h4>
+                <h4 className="text-sm font-black uppercase tracking-widest text-slate-400 mb-4">The Approach</h4>
                 <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-                  My mission is to simplify complex technology so you can focus on what you do best. Whether it's a mobile app for thousands or a specialized web tool, I ensure it's built with purpose and precision.
+                  I think before I build. Every project starts with understanding your goal — not jumping straight to code. The result is a product that makes sense for your users and your business.
                 </p>
               </div>
               <div>
@@ -65,8 +67,8 @@ const About = () => {
               <div className="space-y-12">
                 {[
                   { label: "Years of Engineering", val: "2+" },
-                  { val: "5+", label: "Successful Launches" },
-                  { val: "2", label: "Core Startup Roles" },
+                  { val: "5+", label: "Products Launched" },
+                  { val: "2", label: "Active Startups" },
                 ].map((stat, i) => (
                   <div key={i} className="flex items-end justify-between border-b border-slate-200 dark:border-slate-800 pb-8 last:border-0 last:pb-0">
                     <span className="text-xs font-black uppercase tracking-[0.3em] text-slate-400">{stat.label}</span>

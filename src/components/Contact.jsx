@@ -19,11 +19,11 @@ const Contact = () => {
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="editorial-title mb-8">
-                Start a <span className="gradient-text italic">Dialogue.</span>
+              <h2 className="editorial-title mb-6">
+                Got an idea but not sure <span className="gradient-text italic">where to start?</span>
               </h2>
               <p className="text-2xl md:text-3xl text-slate-500 dark:text-slate-400 font-medium leading-tight tracking-tight max-w-xl">
-                Ready to turn your vision into a high-performance digital product? I'm currently accepting new collaborations and strategy sessions.
+                Let's break it down and turn it into something real.
               </p>
             </motion.div>
 
@@ -33,8 +33,8 @@ const Contact = () => {
                 { icon: <FiPhone />, label: "WhatsApp", val: "+234 811 442 6150", href: "https://wa.me/2348114426150" },
                 { icon: <FiMapPin />, label: "Location", val: "Edo State, Nigeria", href: "#" },
               ].map((item, i) => (
-                <a 
-                  key={i} 
+                <a
+                  key={i}
                   href={item.href}
                   className="flex items-center gap-6 group"
                 >
@@ -59,7 +59,7 @@ const Contact = () => {
               className="glass-card rounded-[3.5rem] p-10 md:p-16"
             >
               {state.succeeded ? (
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   className="text-center space-y-6"
@@ -67,9 +67,9 @@ const Contact = () => {
                   <div className="w-20 h-20 bg-green-500/10 text-green-500 rounded-full flex items-center justify-center mx-auto text-4xl">
                     ✓
                   </div>
-                  <h3 className="text-3xl font-black tracking-tighter">Thank you!</h3>
-                  <p className="text-slate-500 font-medium">Your message has been received. I'll get back to you shortly.</p>
-                  <button 
+                  <h3 className="text-3xl font-black tracking-tighter">Got it!</h3>
+                  <p className="text-slate-500 font-medium">I'll review your message and get back to you soon. Looking forward to hearing more about your idea.</p>
+                  <button
                     onClick={() => window.location.reload()}
                     className="text-xs font-black uppercase tracking-widest text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors"
                   >
@@ -105,24 +105,24 @@ const Contact = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <label htmlFor="message" className="text-xs font-black uppercase tracking-[0.2em] text-slate-400">Project Details</label>
+                    <label htmlFor="message" className="text-xs font-black uppercase tracking-[0.2em] text-slate-400">Tell Me About Your Idea</label>
                     <textarea
                       id="message"
                       name="message"
                       required
                       rows="4"
                       className="w-full bg-transparent border-b-2 border-slate-200 dark:border-slate-800 py-4 focus:border-slate-900 dark:focus:border-white outline-none transition-all text-xl font-bold resize-none"
-                      placeholder="Tell me about your vision..."
+                      placeholder="What are you trying to build?"
                     />
                     <ValidationError prefix="Message" field="message" errors={state.errors} className="text-red-500 text-xs mt-1" />
                   </div>
 
-                  <button 
-                    type="submit" 
+                  <button
+                    type="submit"
                     disabled={state.submitting}
                     className="btn-primary w-full justify-center group py-6 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    {state.submitting ? 'Sending...' : 'Send Message'}
+                    {state.submitting ? 'Sending...' : "Start a Project"}
                     {!state.submitting && <FiSend className="w-6 h-6 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />}
                   </button>
                 </form>

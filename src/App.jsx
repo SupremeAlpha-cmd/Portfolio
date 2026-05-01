@@ -15,19 +15,19 @@ import Footer from './components/Footer';
 import Resume from './components/Resume';
 import WhatsAppButton from './components/WhatsAppButton';
 
-// Main Portfolio Page
+// Conversion flow: Problem → Guide → Services → Proof → Process → CTA
 const PortfolioHome = () => {
   return (
     <>
       <Navbar />
       <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Process />
-        <Projects />
-        <Experience />
-        <Contact />
+        <Hero />        {/* I understand your problem */}
+        <About />       {/* I can guide you */}
+        <Skills />      {/* Here's what I offer */}
+        <Projects />    {/* Here's proof */}
+        <Process />     {/* Here's how I work */}
+        <Experience />  {/* Track record */}
+        <Contact />     {/* Let's start */}
       </main>
       <Footer />
       <WhatsAppButton />
@@ -44,7 +44,6 @@ function App() {
             <Routes>
               <Route path="/" element={<PortfolioHome />} />
               <Route path="/resume" element={<Resume />} />
-              {/* Fallback for any other route */}
               <Route path="*" element={<PortfolioHome />} />
             </Routes>
           </Suspense>

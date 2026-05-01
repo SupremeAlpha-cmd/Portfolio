@@ -82,7 +82,7 @@ const Resume = () => {
           <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed font-medium">
             Results-driven Mobile and Web Developer with 2+ years of experience building high-performance digital products from the ground up. 
             Specializing in Startup Architecture, turning business visions into market-ready applications. Proven track record of optimizing platforms 
-            for discovery—achieving #1 Google Search rankings—and designing gamified educational experiences that drive user engagement.
+            for discovery achieving #1 Google Search rankings and designing gamified educational experiences that drive user engagement.
           </p>
         </section>
 
@@ -162,7 +162,7 @@ const Resume = () => {
         {/* Favorite Quote */}
         <footer className="mt-20 pt-10 border-t border-slate-100 dark:border-slate-800/50 text-center">
             <p className="text-slate-400 text-sm italic">
-                "I believe that great software isn't just about the technology—it's about the people who use it every day."
+                "I believe that great software isn't just about the technology it's about the people who use it every day."
             </p>
         </footer>
       </motion.div>

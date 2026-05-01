@@ -6,13 +6,13 @@ const Process = () => {
     {
       number: "01",
       title: "I Listen",
-      desc: "You explain your idea or problem — no tech talk needed. I ask the right questions to understand what you actually want to achieve.",
+      desc: "You explain your idea or problem no tech talk needed. I ask the right questions to understand what you actually want to achieve.",
       color: "bg-blue-500"
     },
     {
       number: "02",
       title: "I Plan",
-      desc: "I help you structure it clearly and decide what actually matters. We figure out what to build, in what order, and why — before a single line of code is written.",
+      desc: "I help you structure it clearly and decide what actually matters. We figure out what to build, in what order, and why before a single line of code is written.",
       color: "bg-purple-500"
     },
     {
@@ -36,14 +36,14 @@ const Process = () => {
               Simple. Collaborative. No surprises.
             </p>
             <p className="text-lg text-slate-400 dark:text-slate-500 font-medium leading-relaxed mb-12 italic">
-              "You don't need to understand the tech — you just need to see it work."
+              "You don't need to understand the tech you just need to see it work."
             </p>
 
             <div className="glass-card rounded-[3rem] p-10 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-slate-200/50 dark:bg-slate-800/50 rounded-full blur-3xl -mr-16 -mt-16" />
               <h3 className="text-2xl font-black mb-4 tracking-tight">Have an idea?</h3>
               <p className="text-slate-500 dark:text-slate-400 mb-8">
-                You don't need a perfect plan. Just bring the idea — we'll build the plan together.
+                You don't need a perfect plan. Just bring the idea we'll build the plan together.
               </p>
               <a
                 href="#contact"

@@ -19,7 +19,7 @@ const Contact = () => {
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="editorial-title mb-6">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-[1] mb-6">
                 Got an idea but not sure <span className="gradient-text italic">where to start?</span>
               </h2>
               <p className="text-2xl md:text-3xl text-slate-500 dark:text-slate-400 font-medium leading-tight tracking-tight max-w-xl">

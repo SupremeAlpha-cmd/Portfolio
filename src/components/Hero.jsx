@@ -44,7 +44,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-none mb-8"
+              className="text-[2.6rem] leading-[1.1] sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter mb-8 break-words"
             >
               I turn <span className="gradient-text italic">unclear ideas</span> into real, scalable web and mobile products.
             </motion.h1>
@@ -55,7 +55,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-xl md:text-2xl text-slate-500 dark:text-slate-400 max-w-2xl leading-relaxed font-medium mb-4"
             >
-              From confusion to clarity — I help you plan, design, and build what actually works.
+              From confusion to clarity I help you plan, design, and build what actually works.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 30 }}
@@ -63,7 +63,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-base text-slate-400 dark:text-slate-500 max-w-xl font-medium mb-12 italic"
             >
-              You don't need to have everything figured out — that's what I'm here for.
+              You don't need to have everything figured out that's what I'm here for.
             </motion.p>
 
             <motion.div
@@ -102,7 +102,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors duration-700 z-10" />
               <img
                 src={meImg}
-                alt="Oreoluwa Ifedinma Chiazor — Javin-Ozel"
+                alt="Oreoluwa Ifedinma Chiazor Javin-Ozel"
                 fetchpriority="high"
                 decoding="async"
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-110 group-hover:scale-100"
@@ -112,7 +112,7 @@ const Hero = () => {
               <div className="absolute bottom-8 left-8 right-8 z-20">
                 <div className="glass-card rounded-[2rem] p-6 backdrop-blur-3xl">
                   <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">Foundation</p>
-                  <p className="text-sm font-bold leading-tight italic">"I can do all things through Christ who strengthens me." — Phil. 4:13</p>
+                  <p className="text-sm font-bold leading-tight italic">"I can do all things through Christ who strengthens me." Phil. 4:13</p>
                 </div>
               </div>
             </motion.div>

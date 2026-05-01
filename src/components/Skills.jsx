@@ -10,7 +10,7 @@ const Skills = () => {
     {
       id: "01",
       title: "Idea to Product",
-      description: "Don't know where to start? This is where we begin. I help you plan, structure, and turn your idea into a real product — from the first conversation to launch. No tech background needed.",
+      description: "Don't know where to start? This is where we begin. I help you plan, structure, and turn your idea into a real product from the first conversation to launch. No tech background needed.",
       tags: ["Strategy", "MVP", "Planning"],
       icon: <FiZap />,
       featured: true,
@@ -19,7 +19,7 @@ const Skills = () => {
     {
       id: "02",
       title: "Web Development",
-      description: "Clean, fast websites and dashboards built to perform. Whether it's a landing page, a web app, or a full platform — I build it to look great and work even better.",
+      description: "Clean, fast websites and dashboards built to perform. Whether it's a landing page, a web app, or a full platform I build it to look great and work even better.",
       tags: ["React", "Next.js", "SEO"],
       icon: <FiMonitor />,
     },
@@ -84,7 +84,7 @@ const Skills = () => {
                     </h3>
                     {service.featured && (
                       <span className="inline-flex items-center gap-1.5 mt-1 text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full bg-amber-400/10 text-amber-600 dark:text-amber-400 border border-amber-400/20">
-                        ⭐ Start Here — Most Requested
+                        ⭐ Start Here Most Requested
                       </span>
                     )}
                   </div>

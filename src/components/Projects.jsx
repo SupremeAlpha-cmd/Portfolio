@@ -14,7 +14,7 @@ const Projects = () => {
       forClient: 'Education startup',
       problem: 'The platform struggled to reach students searching for educational resources online.',
       whatIDid: 'Improved the site structure, built the core infrastructure, and optimized it for search engines.',
-      result: 'Increased visibility significantly — students can now find the platform easily on Google.',
+      result: 'Increased visibility significantly students can now find the platform easily on Google.',
       tags: ['Web', 'SEO', 'Infrastructure'],
       website: 'https://skholar.site'
     },
@@ -51,7 +51,7 @@ const Projects = () => {
               Real <span className="gradient-text italic">Work.</span>
             </h2>
             <p className="text-xl text-slate-500 dark:text-slate-400 font-medium">
-              Not just what I built — but the problem it solved and the difference it made.
+              Not just what I built but the problem it solved and the difference it made.
             </p>
           </div>
         </div>

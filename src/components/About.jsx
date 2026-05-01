@@ -27,7 +27,7 @@ const About = () => {
                   <span className="text-slate-900 dark:text-white font-black"> That's where I come in.</span>
                 </p>
                 <p>
-                  I don't just build apps or websites — I help you figure out what actually needs to be built, how it should work, and how to do it right the first time.
+                  I don't just build apps or websites I help you figure out what actually needs to be built, how it should work, and how to do it right the first time.
                 </p>
                 <p>
                   Whether you're starting from scratch or trying to improve what you already have, I bring <span className="text-slate-900 dark:text-white font-black">clarity, structure, and execution.</span>
@@ -44,13 +44,13 @@ const About = () => {
               <div>
                 <h4 className="text-sm font-black uppercase tracking-widest text-slate-400 mb-4">The Approach</h4>
                 <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-                  I think before I build. Every project starts with understanding your goal — not jumping straight to code. The result is a product that makes sense for your users and your business.
+                  I think before I build. Every project starts with understanding your goal not jumping straight to code. The result is a product that makes sense for your users and your business.
                 </p>
               </div>
               <div>
                 <h4 className="text-sm font-black uppercase tracking-widest text-slate-400 mb-4">The Foundation</h4>
                 <p className="text-slate-600 dark:text-slate-400 leading-relaxed italic">
-                  Driven by a commitment to excellence and a faith-centered approach to every project. "I can do all things through Christ who strengthens me." — Philippians 4:13
+                  Driven by a commitment to excellence and a faith-centered approach to every project. "I can do all things through Christ who strengthens me." Philippians 4:13
                 </p>
               </div>
             </motion.div>

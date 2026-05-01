@@ -24,7 +24,7 @@ const Footer = () => {
               <span className="w-2 h-2 bg-slate-900 dark:bg-white rounded-full"></span>
             </div>
             <p className="text-xl text-slate-500 dark:text-slate-400 font-medium leading-relaxed italic mb-8">
-              "I believe that great software isn't just about the technology—it's about the people who use it every day."
+              "I believe that great software isn't just about the technology it's about the people who use it every day."
             </p>
             <p className="text-sm font-black uppercase tracking-[0.3em] text-slate-400">
               © {new Date().getFullYear()} Oreoluwa Ifedinma Chiazor

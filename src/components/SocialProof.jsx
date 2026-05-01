@@ -5,7 +5,7 @@ import { FiMessageSquare } from 'react-icons/fi';
 // 🔧 TO ADD: Replace placeholder testimonials with real client quotes or DM screenshots
 const testimonials = [
   {
-    quote: "Oreoluwa helped us get online when we had no idea where to start. He didn't just build — he explained everything along the way.",
+    quote: "Oreoluwa helped us get online when we had no idea where to start. He didn't just build he explained everything along the way.",
     name: "Founder, Skholar",
     role: "Education Startup",
     initial: "S"

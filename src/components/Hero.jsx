@@ -103,6 +103,8 @@ const Hero = () => {
               <img
                 src={meImg}
                 alt="Oreoluwa Ifedinma Chiazor — Javin-Ozel"
+                fetchpriority="high"
+                decoding="async"
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-110 group-hover:scale-100"
               />
 

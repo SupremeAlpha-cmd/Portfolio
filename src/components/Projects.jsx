@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiArrowUpRight } from 'react-icons/fi';
-import skholarImg from '../assets/projects/skholar.png';
-import tpsImg from '../assets/projects/tps.png';
-import syntaxImg from '../assets/projects/syntax.png';
+import skholarImg from '../assets/projects/skholar.jpg';
+import tpsImg from '../assets/projects/tps.jpg';
+import syntaxImg from '../assets/projects/syntax.jpg';
 
 const Projects = () => {
   const projects = [
@@ -82,6 +82,8 @@ const Projects = () => {
                   <img
                     src={project.image}
                     alt={project.title}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-110"
                     onError={(e) => {
                       e.target.src = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80';

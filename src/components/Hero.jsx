@@ -46,18 +46,24 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-none mb-8"
             >
-              I turn your ideas into{' '}
-              <span className="gradient-text italic">real, scalable</span>{' '}
-              web and mobile products.
+              I turn <span className="gradient-text italic">unclear ideas</span> into real, scalable web and mobile products.
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-xl md:text-2xl text-slate-500 dark:text-slate-400 max-w-2xl leading-relaxed font-medium mb-12"
+              className="text-xl md:text-2xl text-slate-500 dark:text-slate-400 max-w-2xl leading-relaxed font-medium mb-4"
             >
-              From confusion to clarity — I help you plan, design, and build digital products that actually work.
+              From confusion to clarity — I help you plan, design, and build what actually works.
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+              className="text-base text-slate-400 dark:text-slate-500 max-w-xl font-medium mb-12 italic"
+            >
+              You don't need to have everything figured out — that's what I'm here for.
             </motion.p>
 
             <motion.div

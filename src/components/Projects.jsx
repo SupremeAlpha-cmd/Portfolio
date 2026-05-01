@@ -11,6 +11,7 @@ const Projects = () => {
       title: 'Skholar',
       category: 'Education Platform',
       image: skholarImg,
+      forClient: 'Education startup',
       problem: 'The platform struggled to reach students searching for educational resources online.',
       whatIDid: 'Improved the site structure, built the core infrastructure, and optimized it for search engines.',
       result: 'Increased visibility significantly — students can now find the platform easily on Google.',
@@ -21,6 +22,7 @@ const Projects = () => {
       title: 'Syntax',
       category: 'EdTech / Learning App',
       image: syntaxImg,
+      forClient: 'EdTech founder',
       problem: 'Students were learning theory but couldn\'t apply it to real jobs when they finished.',
       whatIDid: 'Built a gamified learning platform that makes coding feel practical and career-focused.',
       result: 'A platform that bridges the gap between classroom learning and what employers actually need.',
@@ -31,6 +33,7 @@ const Projects = () => {
       title: 'The Problem Solvers',
       category: 'Product Studio',
       image: tpsImg,
+      forClient: 'Founders with early-stage ideas',
       problem: 'Founders had ideas but no clear path from concept to a working product.',
       whatIDid: 'Created a product studio framework to guide ideas from the first conversation all the way to launch.',
       result: '3+ digital products launched and actively running.',
@@ -88,7 +91,10 @@ const Projects = () => {
 
                 {/* Content */}
                 <div className="p-10 flex flex-col flex-1">
-                  <p className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-400 mb-3">{project.category}</p>
+                  <p className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-400 mb-1">{project.category}</p>
+                  <p className="text-[10px] font-black uppercase tracking-widest text-blue-500 mb-3">
+                    For: {project.forClient}
+                  </p>
                   <h3 className="text-3xl font-black mb-6 tracking-tighter">{project.title}</h3>
 
                   {/* Problem / What I Did / Result */}

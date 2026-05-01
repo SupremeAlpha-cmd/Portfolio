@@ -23,7 +23,7 @@ const Contact = () => {
                 Got an idea but not sure <span className="gradient-text italic">where to start?</span>
               </h2>
               <p className="text-2xl md:text-3xl text-slate-500 dark:text-slate-400 font-medium leading-tight tracking-tight max-w-xl">
-                Let's break it down and turn it into something real.
+                Let's break it down and get you moving.
               </p>
             </motion.div>
 

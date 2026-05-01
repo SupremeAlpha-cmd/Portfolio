@@ -8,6 +8,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import SocialProof from './components/SocialProof';
 import Process from './components/Process';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
@@ -21,13 +22,14 @@ const PortfolioHome = () => {
     <>
       <Navbar />
       <main>
-        <Hero />        {/* I understand your problem */}
-        <About />       {/* I can guide you */}
-        <Skills />      {/* Here's what I offer */}
-        <Projects />    {/* Here's proof */}
-        <Process />     {/* Here's how I work */}
-        <Experience />  {/* Track record */}
-        <Contact />     {/* Let's start */}
+        <Hero />          {/* I understand your problem */}
+        <About />         {/* I can guide you */}
+        <Process />       {/* Here's how I work — builds trust early */}
+        <Skills />        {/* Here's what I offer */}
+        <Projects />      {/* Here's proof */}
+        <SocialProof />   {/* Social proof — trust */}
+        <Experience />    {/* Track record */}
+        <Contact />       {/* Let's start */}
       </main>
       <Footer />
       <WhatsAppButton />

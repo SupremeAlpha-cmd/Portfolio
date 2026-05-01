@@ -9,26 +9,27 @@ const Skills = () => {
   const services = [
     {
       id: "01",
+      title: "Idea to Product",
+      description: "Don't know where to start? This is where we begin. I help you plan, structure, and turn your idea into a real product — from the first conversation to launch. No tech background needed.",
+      tags: ["Strategy", "MVP", "Planning"],
+      icon: <FiZap />,
+      featured: true,
+      badge: "Start Here"
+    },
+    {
+      id: "02",
       title: "Web Development",
       description: "Clean, fast websites and dashboards built to perform. Whether it's a landing page, a web app, or a full platform — I build it to look great and work even better.",
       tags: ["React", "Next.js", "SEO"],
       icon: <FiMonitor />,
     },
     {
-      id: "02",
+      id: "03",
       title: "Mobile Apps",
       description: "Smooth, reliable apps for Android & iOS. I build apps that feel native, load fast, and keep users coming back.",
       tags: ["Flutter", "iOS", "Android"],
       icon: <FiSmartphone />,
     },
-    {
-      id: "03",
-      title: "Idea to Product",
-      description: "Don't know where to start? This is my most important service. I help you plan, structure, and turn your idea into a real product — from the first conversation to launch.",
-      tags: ["Strategy", "MVP", "Planning"],
-      icon: <FiZap />,
-      featured: true,
-    }
   ];
 
   return (
@@ -40,7 +41,8 @@ const Skills = () => {
               What I <span className="gradient-text italic">Do.</span>
             </h2>
             <p className="text-xl md:text-2xl text-slate-500 dark:text-slate-400 font-medium leading-tight">
-              Three ways I help founders and businesses build products that work.
+              Three ways I help you go from idea to a real product. Not sure which one you need?{' '}
+              <span className="text-slate-900 dark:text-white font-black">Start at #01.</span>
             </p>
           </div>
         </div>
@@ -81,8 +83,8 @@ const Skills = () => {
                       {service.title}
                     </h3>
                     {service.featured && (
-                      <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 group-hover:text-slate-300 dark:group-hover:text-slate-600">
-                        ⭐ Key Differentiator
+                      <span className="inline-flex items-center gap-1.5 mt-1 text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full bg-amber-400/10 text-amber-600 dark:text-amber-400 border border-amber-400/20">
+                        ⭐ Start Here — Most Requested
                       </span>
                     )}
                   </div>

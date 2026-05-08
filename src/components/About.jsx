@@ -19,18 +19,18 @@ const About = () => {
               transition={{ duration: 0.8 }}
             >
               <h2 className="editorial-title mb-12">
-                Where Your Idea Meets <span className="gradient-text italic">Execution.</span>
+                Engineering Growth through <span className="gradient-text italic">Technical Strategy.</span>
               </h2>
               <div className="space-y-8 text-xl md:text-2xl text-slate-500 dark:text-slate-400 font-medium leading-relaxed">
                 <p>
-                  Most people have ideas but don't know how to bring them to life.
+                  Most founders have a vision but lack the technical roadmap to get there. 
                   <span className="text-slate-900 dark:text-white font-black"> That's where I come in.</span>
                 </p>
                 <p>
-                  I don't just build apps or websites I help you figure out what actually needs to be built, how it should work, and how to do it right the first time.
+                  As Co-Founder and CTO of The Problem Solvers, I provide the leadership, architecture, and execution needed to build products that last.
                 </p>
                 <p>
-                  Whether you're starting from scratch or trying to improve what you already have, I bring <span className="text-slate-900 dark:text-white font-black">clarity, structure, and execution.</span>
+                  I don't just lead a team; I engineer the future of your business by bringing <span className="text-slate-900 dark:text-white font-black">clarity, structure, and scalable execution.</span>
                 </p>
               </div>
             </motion.div>
@@ -42,9 +42,9 @@ const About = () => {
               className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-12 border-t border-slate-200 dark:border-slate-800"
             >
               <div>
-                <h4 className="text-sm font-black uppercase tracking-widest text-slate-400 mb-4">The Approach</h4>
+                <h4 className="text-sm font-black uppercase tracking-widest text-slate-400 mb-4">The CTO Vision</h4>
                 <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-                  I think before I build. Every project starts with understanding your goal not jumping straight to code. The result is a product that makes sense for your users and your business.
+                  I believe that technical excellence is a business's greatest competitive advantage. Every architecture I design is built with one goal: to empower founders to scale without limits.
                 </p>
               </div>
               <div>

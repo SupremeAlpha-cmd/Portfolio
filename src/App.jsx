@@ -24,10 +24,10 @@ const PortfolioHome = () => {
       <main>
         <Hero />          {/* I understand your problem */}
         <About />         {/* I can guide you */}
-        <Process />       {/* Here's how I work — builds trust early */}
+        <Process />       {/* Here's how I work | builds trust early */}
         <Skills />        {/* Here's what I offer */}
         <Projects />      {/* Here's proof */}
-        <SocialProof />   {/* Social proof — trust */}
+        <SocialProof />   {/* Social proof | trust */}
         <Experience />    {/* Track record */}
         <Contact />       {/* Let's start */}
       </main>

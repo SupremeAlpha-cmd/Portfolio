@@ -48,10 +48,10 @@ const Projects = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
           <div className="max-w-2xl">
             <h2 className="editorial-title mb-4">
-              Real <span className="gradient-text italic">Work.</span>
+              Strategic <span className="gradient-text italic">Successes.</span>
             </h2>
             <p className="text-xl text-slate-500 dark:text-slate-400 font-medium">
-              Not just what I built but the problem it solved and the difference it made.
+              The studio's track record of turning complex challenges into scalable products.
             </p>
           </div>
         </div>
@@ -95,22 +95,22 @@ const Projects = () => {
                 <div className="p-10 flex flex-col flex-1">
                   <p className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-400 mb-1">{project.category}</p>
                   <p className="text-[10px] font-black uppercase tracking-widest text-blue-500 mb-3">
-                    For: {project.forClient}
+                    Partner: {project.forClient}
                   </p>
                   <h3 className="text-3xl font-black mb-6 tracking-tighter">{project.title}</h3>
 
                   {/* Problem / What I Did / Result */}
                   <div className="space-y-4 flex-1">
                     <div>
-                      <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-1">The Problem</p>
+                      <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-1">The Challenge</p>
                       <p className="text-sm text-slate-500 dark:text-slate-400 font-medium leading-relaxed">{project.problem}</p>
                     </div>
                     <div>
-                      <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-1">What I Did</p>
+                      <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-1">Technical Vision</p>
                       <p className="text-sm text-slate-500 dark:text-slate-400 font-medium leading-relaxed">{project.whatIDid}</p>
                     </div>
                     <div>
-                      <p className="text-[10px] font-black uppercase tracking-widest text-emerald-500 mb-1">The Result</p>
+                      <p className="text-[10px] font-black uppercase tracking-widest text-emerald-500 mb-1">The Impact</p>
                       <p className="text-sm text-slate-800 dark:text-slate-200 font-bold leading-relaxed">{project.result}</p>
                     </div>
                   </div>

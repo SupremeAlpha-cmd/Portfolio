@@ -36,7 +36,7 @@ const Hero = () => {
             >
               <span className="w-12 h-[2px] bg-slate-900 dark:bg-white"></span>
               <span className="text-xs md:text-sm font-black uppercase tracking-[0.4em] text-slate-500 dark:text-slate-400">
-                Mobile & Web Developer · Javin-Ozel
+                Co-Founder & CTO · The Problem Solvers
               </span>
             </motion.div>
 
@@ -46,7 +46,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-[2.6rem] leading-[1.1] sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter mb-8 break-words"
             >
-              I turn <span className="gradient-text italic">unclear ideas</span> into real, scalable web and mobile products.
+              I build the systems that turn <span className="gradient-text italic">visionary ideas</span> into market-leading realities.
             </motion.h1>
 
             <motion.p
@@ -55,7 +55,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-xl md:text-2xl text-slate-500 dark:text-slate-400 max-w-2xl leading-relaxed font-medium mb-4"
             >
-              From confusion to clarity I help you plan, design, and build what actually works.
+              Technical leadership for ambitious founders.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 30 }}
@@ -63,7 +63,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-base text-slate-400 dark:text-slate-500 max-w-xl font-medium mb-12 italic"
             >
-              You don't need to have everything figured out that's what I'm here for.
+              As Co-Founder of The Problem Solvers, I lead the architecture and execution of products that don't just work, they scale.
             </motion.p>
 
             <motion.div

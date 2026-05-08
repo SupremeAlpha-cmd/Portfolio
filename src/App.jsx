@@ -8,7 +8,6 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
-import SocialProof from './components/SocialProof';
 import Process from './components/Process';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
@@ -27,7 +26,6 @@ const PortfolioHome = () => {
         <Process />       {/* Here's how I work | builds trust early */}
         <Skills />        {/* Here's what I offer */}
         <Projects />      {/* Here's proof */}
-        <SocialProof />   {/* Social proof | trust */}
         <Experience />    {/* Track record */}
         <Contact />       {/* Let's start */}
       </main>

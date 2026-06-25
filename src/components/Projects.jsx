@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiArrowUpRight } from 'react-icons/fi';
-import skholarImg from '../assets/projects/skholar.jpg';
+import skholarImg from '../assets/projects/skholar.png';
 import tpsImg from '../assets/projects/tps.jpg';
-import syntaxImg from '../assets/projects/syntax.jpg';
+import syntaxImg from '../assets/projects/syntax.png';
 
 const Projects = () => {
   const projects = [

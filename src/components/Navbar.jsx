@@ -24,7 +24,8 @@ const Navbar = () => {
     { name: 'About', href: '#about' },
   ];
 
-  const scrollToSection = (href) => {
+  const scrollToSection = (e, href) => {
+    e?.preventDefault();
     const element = document.querySelector(href);
     if (element) {
       const offset = 100;
@@ -35,6 +36,7 @@ const Navbar = () => {
         top: offsetPosition,
         behavior: 'smooth'
       });
+      history.replaceState(null, '', href);
     }
     setIsOpen(false);
   };
@@ -52,24 +54,26 @@ const Navbar = () => {
           scrolled ? 'shadow-2xl' : 'bg-transparent border-transparent shadow-none'
         }`}>
           {/* Logo */}
-          <div 
+          <a
+            href="#home"
+            onClick={(e) => scrollToSection(e, '#home')}
             className="text-2xl font-black tracking-tighter cursor-pointer flex items-center gap-2"
-            onClick={() => scrollToSection('#home')}
           >
             <span className="dark:text-white text-slate-900">Javin-Ozel</span>
             <span className="w-2 h-2 bg-slate-900 dark:bg-white rounded-full"></span>
-          </div>
+          </a>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
-              <button
+              <a
                 key={link.name}
-                onClick={() => scrollToSection(link.href)}
+                href={link.href}
+                onClick={(e) => scrollToSection(e, link.href)}
                 className="text-xs font-black uppercase tracking-[0.2em] text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white transition-colors"
               >
                 {link.name}
-              </button>
+              </a>
             ))}
           </div>
 
@@ -83,13 +87,14 @@ const Navbar = () => {
               {theme === 'dark' ? <FiSun className="w-5 h-5" /> : <FiMoon className="w-5 h-5" />}
             </button>
             
-            <button
-              onClick={() => scrollToSection('#contact')}
+            <a
+              href="#contact"
+              onClick={(e) => scrollToSection(e, '#contact')}
               className="hidden md:flex items-center gap-2 px-6 py-3 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-full text-xs font-black uppercase tracking-widest transition-transform hover:scale-105 active:scale-95"
             >
               Get In Touch
               <FiArrowUpRight className="w-4 h-4" />
-            </button>
+            </a>
 
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -112,21 +117,23 @@ const Navbar = () => {
           >
             <div className="glass-card rounded-[2.5rem] p-8 shadow-2xl space-y-6">
               {navLinks.map((link) => (
-                <button
+                <a
                   key={link.name}
-                  onClick={() => scrollToSection(link.href)}
+                  href={link.href}
+                  onClick={(e) => scrollToSection(e, link.href)}
                   className="block w-full text-left text-2xl font-black tracking-tighter text-slate-900 dark:text-white"
                 >
                   {link.name}
-                </button>
+                </a>
               ))}
               <hr className="border-slate-200 dark:border-slate-800" />
-              <button
-                onClick={() => scrollToSection('#contact')}
-                className="w-full py-5 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-[2rem] font-black uppercase tracking-widest text-sm"
+              <a
+                href="#contact"
+                onClick={(e) => scrollToSection(e, '#contact')}
+                className="block w-full py-5 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-[2rem] font-black uppercase tracking-widest text-sm text-center"
               >
                 Start a Project
-              </button>
+              </a>
             </div>
           </motion.div>
         )}

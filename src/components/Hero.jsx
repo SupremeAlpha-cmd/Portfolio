@@ -5,13 +5,15 @@ import { FaWhatsapp } from 'react-icons/fa';
 import meImg from '../assets/ME.jpg';
 
 const Hero = () => {
-  const scrollToSection = (href) => {
+  const scrollToSection = (e, href) => {
+    e.preventDefault();
     const element = document.querySelector(href);
     if (element) {
       const offset = 100;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - offset;
       window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+      history.replaceState(null, '', href);
     }
   };
 
@@ -72,13 +74,14 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="flex flex-wrap gap-6"
             >
-              <button
-                onClick={() => scrollToSection('#contact')}
+              <a
+                href="#contact"
+                onClick={(e) => scrollToSection(e, '#contact')}
                 className="btn-primary group"
               >
                 Start a Project
                 <FiArrowDownRight className="w-6 h-6 transition-transform group-hover:rotate-45" />
-              </button>
+              </a>
               <a
                 href="https://wa.me/2348114426150"
                 target="_blank"

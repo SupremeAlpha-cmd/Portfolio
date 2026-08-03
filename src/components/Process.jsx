@@ -47,10 +47,6 @@ const Process = () => {
               </p>
               <a
                 href="#contact"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
-                }}
                 className="flex items-center gap-2 font-black uppercase tracking-widest text-xs"
               >
                 Let's Talk

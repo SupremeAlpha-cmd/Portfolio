@@ -69,8 +69,8 @@ const Resume = () => {
               <a href="https://github.com/SupremeAlpha-cmd" target="_blank" rel="noreferrer" className="flex items-center gap-3 hover:text-slate-900 dark:hover:text-white transition-colors">
                 GitHub <FiGithub className="text-slate-400" />
               </a>
-              <a href="https://javin.site" className="flex items-center gap-3 hover:text-slate-900 dark:hover:text-white transition-colors font-black uppercase text-[10px] tracking-widest">
-                javin-ozel.site <FiExternalLink className="text-slate-400" />
+              <a href="https://javin.vercel.app" className="flex items-center gap-3 hover:text-slate-900 dark:hover:text-white transition-colors font-black uppercase text-[10px] tracking-widest">
+                javin.vercel.app <FiExternalLink className="text-slate-400" />
               </a>
             </div>
           </div>

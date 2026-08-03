@@ -14,7 +14,7 @@ const Projects = () => {
       forClient: 'Education startup',
       problem: 'The platform struggled to reach students searching for educational resources online.',
       whatIDid: 'Improved the site structure, built the core infrastructure, and optimized it for search engines.',
-      result: 'Increased visibility significantly students can now find the platform easily on Google.',
+      result: 'Now ranks #1 on Google for its core study keywords, with students discovering the platform organically.',
       tags: ['Web', 'SEO', 'Infrastructure'],
       website: 'https://skholar.site'
     },
@@ -25,7 +25,7 @@ const Projects = () => {
       forClient: 'EdTech founder',
       problem: 'Students were learning theory but couldn\'t apply it to real jobs when they finished.',
       whatIDid: 'Built a gamified learning platform that makes coding feel practical and career-focused.',
-      result: 'A platform that bridges the gap between classroom learning and what employers actually need.',
+      result: 'Learners now move from theory to real projects, building the skills employers actually hire for.',
       tags: ['Web App', 'UI/UX', 'Next.js'],
       website: 'https://learnsyntax.app'
     },
@@ -36,7 +36,7 @@ const Projects = () => {
       forClient: 'Founders with early-stage ideas',
       problem: 'Founders had ideas but no clear path from concept to a working product.',
       whatIDid: 'Created a product studio framework to guide ideas from the first conversation all the way to launch.',
-      result: '3+ digital products launched and actively running.',
+      result: '3+ digital products launched and actively running today.',
       tags: ['Strategy', 'Systems', 'Launch'],
       website: 'https://theproblemsolvers.site'
     },

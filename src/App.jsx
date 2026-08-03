@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
 
@@ -17,6 +17,14 @@ import WhatsAppButton from './components/WhatsAppButton';
 
 // Conversion flow: Problem → Guide → Services → Proof → Process → CTA
 const PortfolioHome = () => {
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const el = document.querySelector(hash);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
+
   return (
     <>
       <Navbar />

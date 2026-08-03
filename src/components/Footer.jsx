@@ -1,11 +1,12 @@
 import React from 'react';
-import { FiGithub, FiLinkedin, FiTwitter, FiInstagram, FiFacebook, FiArrowUp } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiInstagram, FiFacebook, FiArrowUp } from 'react-icons/fi';
+import { SiX } from 'react-icons/si';
 
 const Footer = () => {
   const socialLinks = [
     { icon: FiGithub, url: 'https://github.com/SupremeAlpha-cmd', label: 'GitHub' },
     { icon: FiLinkedin, url: 'https://www.linkedin.com/in/oreoluwa-chiazor-663b16395/', label: 'LinkedIn' },
-    { icon: FiTwitter, url: 'https://twitter.com', label: 'Twitter' },
+    { icon: SiX, url: 'https://x.com/OreoluwaChiazor', label: 'X' },
     { icon: FiInstagram, url: 'https://www.instagram.com/oreoluwaifedinma?igsh=MWhtcTI2eXZzaGdxMg==', label: 'Instagram' },
     { icon: FiFacebook, url: 'https://www.facebook.com/profile.php?id=61575762574824', label: 'Facebook' },
   ];

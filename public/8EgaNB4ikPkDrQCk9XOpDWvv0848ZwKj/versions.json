@@ -1,0 +1,25 @@
+{
+  "versions": [
+    {
+      "id": "nirv",
+      "name": "New International Reader's Version",
+      "language": "English",
+      "file": "https://javin.vercel.app/8EgaNB4ikPkDrQCk9XOpDWvv0848ZwKj/nirv-zefania.xml",
+      "format": "zefania"
+    },
+    {
+      "id": "lsv",
+      "name": "Literal Standard Version",
+      "language": "English",
+      "file": "https://javin.vercel.app/8EgaNB4ikPkDrQCk9XOpDWvv0848ZwKj/lsv-zefania.xml",
+      "format": "zefania"
+    },
+    {
+      "id": "voice",
+      "name": "The Voice",
+      "language": "English",
+      "file": "https://javin.vercel.app/8EgaNB4ikPkDrQCk9XOpDWvv0848ZwKj/voice-zefania.xml",
+      "format": "zefania"
+    }
+  ]
+}

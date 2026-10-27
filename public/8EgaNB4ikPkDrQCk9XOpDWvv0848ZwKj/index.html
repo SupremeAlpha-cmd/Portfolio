@@ -2,29 +2,36 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Store</title>
+<title>Version Store</title>
 <style>
   body { background: #fff; color: #1a1a1a; font-family: Georgia, 'Times New Roman', serif; margin: 0; padding: 48px 32px; }
+  .wrap { max-width: 520px; margin: 0 auto; }
   .label { font-family: -apple-system, Helvetica, Arial, sans-serif; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: #6b7250; }
   h1 { font-weight: normal; font-size: 28px; margin: 12px 0 8px; }
-  p { color: #666; font-size: 15px; }
-  ul { list-style: none; padding: 0; margin-top: 32px; }
-  li { padding: 14px 0; border-bottom: 1px solid #e3e3e0; font-size: 18px; }
-  li span { display: block; font-family: -apple-system, Helvetica, Arial, sans-serif; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #666; margin-top: 2px; }
-  a { color: #6b7250; }
+  .note { color: #666; font-size: 15px; }
+  ul { list-style: none; padding: 0; margin: 32px 0 0; }
+  li { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 16px 0; border-bottom: 1px solid #e3e3e0; }
+  li .nm { font-size: 18px; }
+  li .mt { font-family: -apple-system, Helvetica, Arial, sans-serif; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #666; margin-top: 2px; }
+  .dl { flex: none; font-family: -apple-system, Helvetica, Arial, sans-serif; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #6b7250; border: 1px solid #6b7250; padding: 8px 14px; text-decoration: none; }
+  .foot { margin-top: 48px; padding-top: 16px; border-top: 1px solid #e3e3e0; font-family: -apple-system, Helvetica, Arial, sans-serif; font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: #666; }
+  a.man { color: #6b7250; }
 </style>
 </head>
 <body>
+<div class="wrap">
 <div class="label">Private · Unlisted</div>
-<h1>Store</h1>
-<p>Manifest: <a href="versions.json">versions.json</a></p>
+<h1>Version Store</h1>
+<p class="note">Not linked anywhere. Manifest: <a class="man" href="versions.json">versions.json</a></p>
 <ul>
-  <li>New International Reader's Version<span>English · Zefania · nirv-zefania.xml</span></li>
-  <li>Literal Standard Version<span>English · Zefania · lsv-zefania.xml</span></li>
-  <li>The Voice<span>English · Zefania · voice-zefania.xml</span></li>
-  <li>Amplified Bible<span>English · Zefania · amp-zefania.xml</span></li>
-  <li>The Passion Translation (Partial)<span>English · Zefania · 51 books · tpt-zefania.xml</span></li>
-  <li>New Living Translation<span>English · Zefania · nlt-zefania.xml</span></li>
+  <li><div><div class="nm">New International Reader's Version</div><div class="mt">English · Zefania · 66 books</div></div><a class="dl" href="nirv-zefania.xml" download>Download</a></li>
+  <li><div><div class="nm">Literal Standard Version</div><div class="mt">English · Zefania · 66 books</div></div><a class="dl" href="lsv-zefania.xml" download>Download</a></li>
+  <li><div><div class="nm">The Voice</div><div class="mt">English · Zefania · 66 books</div></div><a class="dl" href="voice-zefania.xml" download>Download</a></li>
+  <li><div><div class="nm">Amplified Bible</div><div class="mt">English · Zefania · 66 books</div></div><a class="dl" href="amp-zefania.xml" download>Download</a></li>
+  <li><div><div class="nm">The Passion Translation (Partial)</div><div class="mt">English · Zefania · 51 books</div></div><a class="dl" href="tpt-zefania.xml" download>Download</a></li>
+  <li><div><div class="nm">New Living Translation</div><div class="mt">English · Zefania · 66 books</div></div><a class="dl" href="nlt-zefania.xml" download>Download</a></li>
 </ul>
+<div class="foot">Lutroo Bible</div>
+</div>
 </body>
 </html>

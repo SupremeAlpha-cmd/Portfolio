@@ -20,6 +20,27 @@
       "language": "English",
       "file": "https://javin.vercel.app/8EgaNB4ikPkDrQCk9XOpDWvv0848ZwKj/voice-zefania.xml",
       "format": "zefania"
+    },
+    {
+      "id": "amp",
+      "name": "Amplified Bible",
+      "language": "English",
+      "file": "https://javin.vercel.app/8EgaNB4ikPkDrQCk9XOpDWvv0848ZwKj/amp-zefania.xml",
+      "format": "zefania"
+    },
+    {
+      "id": "tpt",
+      "name": "The Passion Translation (Partial)",
+      "language": "English",
+      "file": "https://javin.vercel.app/8EgaNB4ikPkDrQCk9XOpDWvv0848ZwKj/tpt-zefania.xml",
+      "format": "zefania"
+    },
+    {
+      "id": "nlt",
+      "name": "New Living Translation",
+      "language": "English",
+      "file": "https://javin.vercel.app/8EgaNB4ikPkDrQCk9XOpDWvv0848ZwKj/nlt-zefania.xml",
+      "format": "zefania"
     }
   ]
 }
